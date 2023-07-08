@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profil Sosial Media</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+      body {
+        background: linear-gradient(135deg, #fce38a 0%, #f38181 50%, #95e1d3 100%);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        animation-name: gradientAnimation;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .profile-card {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 600px;
+        padding: 60px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0 auto; /* Menengahkan kartu nama secara horizontal */
+        margin-bottom: 100px;
+      }
+
+      .profile-card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .profile-card h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      .social-links ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+      }
+
+      .social-links li {
+        margin-bottom: 20px;
+      }
+
+      .social-links a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 30px;
+        text-decoration: none;
+      }
+
+      .head {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 2px;
+        left: 2px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .heading-box {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 30px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 30px;
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      .footer {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        transition: background-color 0.3s ease;
+        margin-top: 200px;
+      }
+
+      .footer:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      .footer p {
+        margin: 0;
+        font-size: 15px;
+        color: #333;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .profile-card {
+          margin-top: 150px;
+          width: 800px;
+        }
+
+        .profile-card img {
+          width: 340px;
+          height: 340px;
+        }
+
+        .profile-card h2 {
+          font-size: 60px;
+        }
+
+        .social-links a {
+          padding: 10px 20px;
+          font-size: 35px;
+        }
+
+        .heading-box {
+          padding: 10px 50px;
+        }
+
+        .footer p {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="heading-box">
+        <h1 style="font-size: 40px">Profil Sosial Media</h1>
+      </div>
+    </div>
+
+    <main>
+      <div class="profile-card">
+        <img src="gambar.jpg" alt="Foto Profil" />
+        <h2>I DONT KNOW</h2>
+
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://wa.me/6281312668443?text=Halo,%20salam%20kenal"><i data-feather="message-square"></i>WhatsApp</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dickymuhammadsiddiq_/"><i data-feather="instagram"></i>Instagram</a>
+            </li>
+            <li>
+              <a href="mailto:dickymuhammadsiddiq123@gmail.com"><i data-feather="mail"></i>Email</a>
+            </li>
+            <li class="telegram">
+              <a href="http://t.me/BadutProgramer"><i data-feather="send"></i>Telegram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/Dicky Muhammad Siddiq/"><i data-feather="linkedin"></i>LinkedIn</a>
+            </li>
+
+            <!-- Tambahkan lebih banyak tautan sosial media sesuai kebutuhan -->
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Hak Cipta &copy; 2023. By dickymuhammadsiddiq_</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace(); // Mengganti ikon Feather dengan ikon yang sesuai
+    </script>
+  </body>
+</html>
